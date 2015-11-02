@@ -19,7 +19,7 @@ library
   exposed-modules:   Data.Aeson.LinkedData
   -- other-modules:       
   -- other-extensions:    
-  build-depends:     base >=4.6 && <4.7
+  build-depends:     base
                      , aeson
                      , bytestring
   -- hs-source-dirs:      
@@ -29,7 +29,7 @@ library
 test-suite test
   type:              exitcode-stdio-1.0
   main-is:           Test.hs
-  build-depends:     base >=4.6 && <4.7
+  build-depends:     base
                      , aeson
                      , aeson-ld
                      , bytestring
