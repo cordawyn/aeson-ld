@@ -27,7 +27,7 @@ instance ToJSON URI where
 
 instance FromJSON URI where
   parseJSON (String u) = pure $ fromJust $ parseURI $ unpack u
-  parseJSON _          = error "Invalid URI format"
+  parseJSON _          = error "Cannot coerce the value into URI"
 
 instance ToJSON Manifest where
   toJSON (Manifest mfName mfDescription mfBaseIRI mfSequence) =
