@@ -33,9 +33,11 @@ test-suite test
                      , aeson
                      , aeson-ld
                      , bytestring
+                     , text
+                     , network-uri
                      , unordered-containers
                      , test-framework
                      , test-framework-quickcheck2
   hs-source-dirs:    test
   default-language:  Haskell2010
-  extensions:        OverloadedStrings
+  extensions:        OverloadedStrings, DeriveGeneric
