@@ -34,6 +34,7 @@ test-suite test
                      , aeson-ld
                      , bytestring
                      , text
+                     , vector
                      , network-uri
                      , unordered-containers
                      , test-framework
